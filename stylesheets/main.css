@@ -1,0 +1,46 @@
+
+body
+{
+    background-image:url('5.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    font:  bold small-caps 120%/120% fantasy;
+    color: silver;
+    text-align: center;
+    font-size: 12px;
+}
+table {
+  margin-left:auto; 
+  margin-right:auto; 
+  width: 400px; 
+  -webkit-user-select: none; 
+}
+td {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  border: 2px solid #808080;
+  -webkit-border-radius: 10px;
+}
+input {
+  margin-left:auto; 
+  margin-right:auto; 
+  float: relative;
+  width: 100px;
+  margin-top: 3em;
+}
+.button{
+  height: 100%;
+  width: 100%;
+}
+p {
+font-size: 45px;
+}
+

@@ -1,0 +1,518 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+        <script language="Javascript">
+            function display()
+            {
+                document.getElementById("p1").style.visibility="visible";
+            }
+            
+            function cellClick(index)
+            {
+                var t1 = document.getElementById("1");
+                var t2 = document.getElementById("2");
+                var t3 = document.getElementById("3");
+                var t4 = document.getElementById("4");
+                var t5 = document.getElementById("5");
+                var t6 = document.getElementById("6");
+                var t7 = document.getElementById("7");
+                var t8 = document.getElementById("8");
+                var t9 = document.getElementById("9");
+                var t10 = document.getElementById("10");
+                var t11 = document.getElementById("11");
+                var t12 = document.getElementById("12");
+                var t13 = document.getElementById("13");
+                var t14 = document.getElementById("14");
+                var t15 = document.getElementById("15");
+                var t16 = document.getElementById("16");
+                
+                switch (parseInt(index))
+                {
+                    case 1:
+                    if (t2.innerHTML==0 || t5.innerHTML==0 )
+                    {
+                        if (t2.innerHTML==0)
+                        {
+                            t2.innerHTML=t1.innerHTML;
+                            t1.innerHTML=0;
+                        }
+                        else
+                        {
+                            t5.innerHTML=t1.innerHTML;
+                            t1.innerHTML=0;
+                        }
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 2:
+                    if (t1.innerHTML==0 || t3.innerHTML==0 || t6.innerHTML==0 )
+                    {
+                        if (t1.innerHTML==0)
+                        {
+                            t1.innerHTML=t2.innerHTML;
+                            t2.innerHTML=0;
+                        }
+                        else if(t3.innerHTML==0)
+                        {
+                            t3.innerHTML=t2.innerHTML;
+                            t2.innerHTML=0;
+                        }
+                        else
+                        {
+                            t6.innerHTML=t2.innerHTML;
+                            t2.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 3:
+                    if (t2.innerHTML==0 || t4.innerHTML==0 || t7.innerHTML==0 )
+                    {
+                        if (t2.innerHTML==0)
+                        {
+                            t2.innerHTML=t3.innerHTML;
+                            t3.innerHTML=0;
+                        }
+                        if (t4.innerHTML==0)
+                        {
+                            t4.innerHTML=t3.innerHTML;
+                            t3.innerHTML=0;
+                        }
+                        else
+                        {
+                            t7.innerHTML=t3.innerHTML;
+                            t3.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 4:
+                    if (t3.innerHTML==0 || t5.innerHTML==0 || t8.innerHTML==0 )
+                    {
+                        if (t3.innerHTML==0)
+                        {
+                            t3.innerHTML=t4.innerHTML;
+                            t4.innerHTML=0;
+                        }
+                        else if(t5.innerHTML==0)
+                        {
+                            t5.innerHTML=t4.innerHTML;
+                            t4.innerHTML=0;
+                        }
+                        else
+                        {
+                            t8.innerHTML=t4.innerHTML;
+                            t4.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 5:
+                    if (t1.innerHTML==0 || t6.innerHTML==0 || t9.innerHTML==0 )
+                    {
+                        if (t1.innerHTML==0)
+                        {
+                            t1.innerHTML=t5.innerHTML;
+                            t5.innerHTML=0;
+                        }
+                        else if(t6.innerHTML==0)
+                        {
+                            t6.innerHTML=t5.innerHTML;
+                            t5.innerHTML=0;
+                        }
+                        else
+                        {
+                            t9.innerHTML=t5.innerHTML;
+                            t5.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 6:
+                    if (t2.innerHTML==0 || t5.innerHTML==0 || t7.innerHTML==0 || t10.innerHTML==0 )
+                    {
+                        if (t2.innerHTML==0)
+                        {
+                            t2.innerHTML=t6.innerHTML;
+                            t6.innerHTML=0;
+                        }
+                        else if(t5.innerHTML==0)
+                        {
+                            t5.innerHTML=t6.innerHTML;
+                            t6.innerHTML=0;
+                        }
+                        else if(t7.innerHTML==0)
+                        {
+                            t7.innerHTML=t6.innerHTML;
+                            t6.innerHTML=0;
+                        }
+                        else
+                        {
+                            t10.innerHTML=t6.innerHTML;
+                            t6.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 7:
+                    if (t3.innerHTML==0 || t6.innerHTML==0 || t8.innerHTML==0 || t11.innerHTML==0 )
+                    {
+                        if (t3.innerHTML==0)
+                        {
+                            t3.innerHTML=t7.innerHTML;
+                            t7.innerHTML=0;
+                        }
+                        else if(t6.innerHTML==0)
+                        {
+                            t6.innerHTML=t7.innerHTML;
+                            t7.innerHTML=0;
+                        }
+                        else if(t8.innerHTML==0)
+                        {
+                            t8.innerHTML=t7.innerHTML;
+                            t7.innerHTML=0;
+                        }
+                        else
+                        {
+                            t11.innerHTML=t7.innerHTML;
+                            t7.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 8:
+                    if (t4.innerHTML==0 || t7.innerHTML==0 || t12.innerHTML==0 )
+                    {
+                        if (t4.innerHTML==0)
+                        {
+                            t4.innerHTML=t8.innerHTML;
+                            t8.innerHTML=0;
+                        }
+                        else if(t7.innerHTML==0)
+                        {
+                            t7.innerHTML=t8.innerHTML;
+                            t8.innerHTML=0;
+                        }
+                        else
+                        {
+                            t12.innerHTML=t8.innerHTML;
+                            t8.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 9:
+                    if (t5.innerHTML==0 || t10.innerHTML==0 || t13.innerHTML==0 )
+                    {
+                        if (t5.innerHTML==0)
+                        {
+                            t5.innerHTML=t9.innerHTML;
+                            t9.innerHTML=0;
+                        }
+                        else if(t10.innerHTML==0)
+                        {
+                            t10.innerHTML=t9.innerHTML;
+                            t9.innerHTML=0;
+                        }
+                        else
+                        {
+                            t13.innerHTML=t9.innerHTML;
+                            t9.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 10:
+                    if (t6.innerHTML==0 || t9.innerHTML==0 || t11.innerHTML==0 || t14.innerHTML==0 )
+                    {
+                        if (t6.innerHTML==0)
+                        {
+                            t6.innerHTML=t10.innerHTML;
+                            t10.innerHTML=0;
+                        }
+                        else if(t9.innerHTML==0)
+                        {
+                            t9.innerHTML=t10.innerHTML;
+                            t10.innerHTML=0;
+                        }
+                        else if(t11.innerHTML==0)
+                        {
+                            t11.innerHTML=t10.innerHTML;
+                            t10.innerHTML=0;
+                        }
+                        else
+                        {
+                            t14.innerHTML=t10.innerHTML;
+                            t10.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 11:
+                    if (t7.innerHTML==0 || t10.innerHTML==0 || t12.innerHTML==0 || t15.innerHTML==0 )
+                    {
+                        if (t7.innerHTML==0)
+                        {
+                            t7.innerHTML=t11.innerHTML;
+                            t11.innerHTML=0;
+                        }
+                        else if(t10.innerHTML==0)
+                        {
+                            t10.innerHTML=t11.innerHTML;
+                            t11.innerHTML=0;
+                        }
+                        else if(t12.innerHTML==0)
+                        {
+                            t12.innerHTML=t11.innerHTML;
+                            t11.innerHTML=0;
+                        }
+                        else
+                        {
+                            t15.innerHTML=t11.innerHTML;
+                            t11.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 12:
+                    if (t8.innerHTML==0 || t11.innerHTML==0 || t16.innerHTML==0 )
+                    {
+                        if (t8.innerHTML==0)
+                        {
+                            t8.innerHTML=t12.innerHTML;
+                            t12.innerHTML=0;
+                        }
+                        else if(t11.innerHTML==0)
+                        {
+                            t11.innerHTML=t12.innerHTML;
+                            t12.innerHTML=0;
+                        }
+                        else
+                        {
+                            t16.innerHTML=t12.innerHTML;
+                            t12.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 13:
+                    if (t9.innerHTML==0 || t14.innerHTML==0 )
+                    {
+                        if (t9.innerHTML==0)
+                        {
+                            t9.innerHTML=t13.innerHTML;
+                            t13.innerHTML=0;
+                        }
+                        else
+                        {
+                            t14.innerHTML=t13.innerHTML;
+                            t13.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 14:
+                    if (t10.innerHTML==0 || t13.innerHTML==0 || t15.innerHTML==0 )
+                    {
+                        if (t10.innerHTML==0)
+                        {
+                            t10.innerHTML=t14.innerHTML;
+                            t14.innerHTML=0;
+                        }
+                        else if(t13.innerHTML==0)
+                        {
+                            t13.innerHTML=t14.innerHTML;
+                            t14.innerHTML=0;
+                        }
+                        else
+                        {
+                            t15.innerHTML=t14.innerHTML;
+                            t14.innerHTML=0;
+                        }
+                        
+                    }
+                    else
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 15:
+                    if (t11.innerHTML==0 || t14.innerHTML==0 || t16.innerHTML==0 )
+                    {
+                        if (t11.innerHTML==0)
+                        {
+                            t11.innerHTML=t15.innerHTML;
+                            t15.innerHTML=0;
+                        }
+                        else if(t14.innerHTML==0)
+                        {
+                            t14.innerHTML=t15.innerHTML;
+                            t15.innerHTML=0;
+                        }
+                        else 
+                        {
+                            t16.innerHTML=t15.innerHTML;
+                            t15.innerHTML=0;
+                        }
+                        
+                    }
+                    else 
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                    case 16:
+                    if (t12.innerHTML==0 || t15.innerHTML==0 )
+                    {
+                        if (t12.innerHTML==0) 
+                        {
+                            t12.innerHTML=t16.innerHTML;
+                            t16.innerHTML=0;
+                        }
+                        else 
+                        {
+                            t15.innerHTML=t16.innerHTML;
+                            t16.innerHTML=0;
+                        }
+                        
+                    }
+                    else 
+                    {
+                        alert("Cannot move this cell!");
+                    }
+                    break;
+                }
+            }
+
+
+        function solver()
+        {
+            var t1 = document.getElementById("1").innerHTML;
+            var t2 = document.getElementById("2").innerHTML;
+            var t3 = document.getElementById("3").innerHTML;
+            var t4 = document.getElementById("4").innerHTML;
+            var t5 = document.getElementById("5").innerHTML;
+            var t6 = document.getElementById("6").innerHTML;
+            var t7 = document.getElementById("7").innerHTML;
+            var t8 = document.getElementById("8").innerHTML;
+            var t9 = document.getElementById("9").innerHTML;
+            var t10 = document.getElementById("10").innerHTML;
+            var t11 = document.getElementById("11").innerHTML;
+            var t12 = document.getElementById("12").innerHTML;
+            var t13 = document.getElementById("13").innerHTML;
+            var t14 = document.getElementById("14").innerHTML;
+            var t15 = document.getElementById("15").innerHTML;
+            var t16 = document.getElementById("16").innerHTML;
+            location.href = '/solver?t1='+t1+'&t2='+t2+'&t3='+t3+'&t4='+t4+'&t5='+t5+'&t6='+t6+'&t7='+t7+'&t8='+t8+'&t9='+t9+'&t10='+t10+'&t11='+t11+'&t12='+t12+'&t13='+t13+'&t14='+t14+'&t15='+t15+'&t16='+t16;
+        }
+            
+        </script>
+</head>
+<body>
+<div style="width:100%;">
+<div style="float:left; display:inline-block;" class="div1">
+<table>
+<tr>
+  <tr>
+    <td id="1" onclick="cellClick('1')">{{zero}}</td>
+    <td id="2" onclick="cellClick('2')">{{one}}</td>
+    <td id="3" onclick="cellClick('3')">{{two}}</td>
+    <td id="4" onclick="cellClick('4')">{{three}}</td>
+  </tr>
+  <tr>
+    <td id="5" onclick="cellClick('5')">{{four}}</td>
+    <td id="6" onclick="cellClick('6')">{{five}}</td>
+    <td id="7" onclick="cellClick('7')">{{six}}</td>
+    <td id="8" onclick="cellClick('8')">{{seven}}</td>
+  </tr>
+  <tr>
+    <td id="9" onclick="cellClick('9')">{{eigth}}</td>
+    <td id="10" onclick="cellClick('10')">{{nine}}</td>
+    <td id="11" onclick="cellClick('11')">{{ten}}</td>
+    <td id="12" onclick="cellClick('12')">{{eleven}}</td>
+  </tr>
+   <tr>
+    <td id="13" onclick="cellClick('13')">{{twelve}}</td>
+    <td id="14" onclick="cellClick('14')">{{thirteen}}</td>
+    <td id="15" onclick="cellClick('15')">{{fourteen}}</td>
+    <td id="16" onclick="cellClick('16')">{{fifteen}}</td>
+  </tr>
+  </tr>
+</table>
+
+<input type="button" value="BFS Solver" onclick="solver()">
+<input type="button" value="Reset" onclick="window.location = '/switchcell';">
+</div>
+<div style="float:right; display:inline-block;" class="div2">
+    PATH TO FIND SOLUTION BY BREADTH FIRST SEARSH METHOD:
+    <p>{{path}}</p>
+    u = up <br>
+    d = down<br>
+    l = left<br>
+    r = right<br><br>
+    Detailed solution as python 'dict', collection module.<br>
+    Keys refer to the path from given board and values refer to current board.<br>
+    <br>
+    {% for i in detailed%}
+        {% for j in i%}
+            {{j}}<br>
+        {%endfor%}
+    {%endfor%}
+</div>
+</div>
+</body>
+</html>
